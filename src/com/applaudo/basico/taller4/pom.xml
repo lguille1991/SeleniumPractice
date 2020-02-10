@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Taller 4">
+    <test name="Busquedas por Google">
+        <classes>
+            <class name="com.applaudo.basico.taller4.GoogleSearch"></class>
+            <class name="com.applaudo.basico.taller4.GoogleSearch2"></class>
+        </classes>
+    </test>
+    <test name="Aprendiendo TestNG">
+        <classes>
+            <class name="com.applaudo.basico.taller4.Validations"></class>
+        </classes>
+    </test>
+</suite>
