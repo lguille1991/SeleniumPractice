@@ -9,7 +9,7 @@ public class BaseTest {
     public WebDriver driver;
     public String chromePath = System.getProperty("user.dir") + "\\drivers\\chromedriver.exe";
 
-    @BeforeMethod
+    //@BeforeMethod
     public void launchBrowser(){
         System.setProperty("webdriver.chrome.driver", chromePath);
         String baseURL = "http://www.google.com/";
@@ -18,47 +18,47 @@ public class BaseTest {
         driver.manage().window().maximize();
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void closeBrowser(){
         driver.quit();
     }
 
-    @BeforeSuite
+    //@BeforeSuite
     public void beforeSuite(){
         System.out.println("Ejecutando Test Suite");
     }
 
-    @AfterSuite
+    //@AfterSuite
     public void testSuite(){
         System.out.println("Cerrando Test Suite");
     }
 
-    @BeforeTest
+    //@BeforeTest
     public void beforeTest(){
         System.out.println("Ejecutando Test");
     }
 
-    @AfterTest
+    //@AfterTest
     public void afterTest(){
         System.out.println("Cerrando Test Suite");
     }
 
-    @BeforeClass
+    //@BeforeClass
     public void beforeClass(){
         System.out.println("Ejecutando Clase");
     }
 
-    @AfterClass
+    //@AfterClass
     public void afterClass(){
         System.out.println("Cerrando Clase");
     }
 
-    @BeforeMethod
+    //@BeforeMethod
     public void beforeMethod(){
         System.out.println("Ejecutando Método");
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void afterMethod(){
         System.out.println("Cerrando Método");
     }
